@@ -25,8 +25,9 @@ for s in new_tweets:
 
             sn = s.user.screen_name
             ai=w.rundis(s.text)
-            if len(ai) > 140:
-                ai = ai[0:139] + ' '
+            m = sn + ai
+            if len(m) > 140:
+                m = m[0:139] + ' '
 
+            s = api.update_status(m, s.id)
 
-            s = api.update_status(ai, s.id)
