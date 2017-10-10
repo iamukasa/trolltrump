@@ -1,0 +1,10 @@
+bot to trolltrump by using rnns to understand his tweet and then fiteback
+
+create a credentials.py file wit your credentials as such:
+consumer_key = ' '
+consumer_secret = ' '
+access_token = ' '
+access_token_secret = ' '
+
+
+
