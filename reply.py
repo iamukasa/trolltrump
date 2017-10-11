@@ -25,7 +25,7 @@ for s in new_tweets:
 
             sn = s.user.screen_name
             ai=w.rundis(s.text)
-            m = sn + ai
+            m = " @"+sn+ ai
             if len(m) > 140:
                 m = m[0:139] + ' '
 
